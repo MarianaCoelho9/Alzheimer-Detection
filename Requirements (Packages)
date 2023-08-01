@@ -1,0 +1,12 @@
+pip install classification-models-3D
+pip install h5py
+pip install keras
+pip install nibabel
+pip install nilearn
+pip install numpy
+pip install os-sys
+pip install pandas
+pip install scipy
+pip install -U scikit-learn
+pip install tensorflow
+pip install volumentations-3D
