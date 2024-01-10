@@ -78,20 +78,6 @@ for subdir, dirs, files in os.walk("data_cn"):
         if filepath.endswith("SS.img"):
             cn.append(filepath)
 
-# In[20]:
-
-# - in case some image is corrupted, remove it from the array so as not to give problems in the next phases 
-
-#cn.remove("data_cn/EMCI/ADNI_EMCI_035_S_2061_MR_____/ADNI_EMCI_035_S_2061_MR_MPRAGE_br_raw_20111026170355848_136_S126489_I262601_MNI_SS.img")
-#ad.remove("data_ad/LMCI_final/ADNI_LMCI_136_S_4408_MR/ADNI_LMCI_136_S_4408_MR_MPRAGE_br_raw_20120130114901045_127_S138679_I281014_MNI_SS.img")
-#ad.remove("data_ad/LMCI_final/ADNI_LMCI_141_S_4053_MR/ADNI_LMCI_141_S_4053_MR_MPRAGE_br_raw_20110524111945249_25_S109691_I236768_MNI_SS.img")
-#ad.remove("data_ad/AD_final/ADNI_AD_018_S_4733_MR_/ADNI_AD_018_S_4733_MR_MPRAGE_br_raw_20120830114116243_106_S163964_I327936_MNI_Hippo.img")
-#ad.remove("data_ad/AD_final/ADNI_AD_135_S_4676_MR/ADNI_AD_135_S_4676_MR_MPRAGE_br_raw_20120419112020151_48_S147672_I298456_MNI_Telencephalon.img")
-#ad.remove("data_ad/AD/ADNI_AD_153_S_4172_MR/ADNI_AD_153_S_4172_MR_MPRAGE_br_raw_20110817113035140_122_S119196_I251187_MNI_SS.img")
-#ad.remove("data_ad/AD/ADNI_AD_137_S_4258_MR/ADNI_AD_137_S_4258_MR_MPRAGE_br_raw_20111011123031402_130_S125049_I260531_MNI_SS.img")
-#ad.remove("data_ad/AD/ADNI_AD_116_S_4209_MR/ADNI_AD_116_S_4209_MR_MPRAGE_br_raw_20110829150322360_127_S120580_I253234_MNI_SS.img")
-
-
 def read_nifti_file(filepath):
     """Read and load volume"""
     # Read file
